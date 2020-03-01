@@ -19,7 +19,9 @@ class App extends React.Component {
     })
   }
 
-  showFlower = (flower) => {
+  showFlower = (event, flower) => {
+    event.preventDefault()
+    
     this.setState({
       currentFlower: flower
     })
@@ -31,7 +33,7 @@ class App extends React.Component {
         <h1>Welcome!</h1>
         <ul className="flower-list">
           {this.state.flowers.map(flower => {
-            return <li key={flower.id} onClick={() => this.showFlower(flower)}><a href="#">{flower.name}</a></li>
+            return <li key={flower.id} onClick={(e) => this.showFlower(e, flower)}><a href="#">{flower.name}</a></li>
           })}
         </ul>
 

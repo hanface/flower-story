@@ -167,7 +167,9 @@ function (_React$Component) {
       currentFlower: null
     });
 
-    _defineProperty(_assertThisInitialized(_this), "showFlower", function (flower) {
+    _defineProperty(_assertThisInitialized(_this), "showFlower", function (event, flower) {
+      event.preventDefault();
+
       _this.setState({
         currentFlower: flower
       });
@@ -197,8 +199,8 @@ function (_React$Component) {
       }, this.state.flowers.map(function (flower) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           key: flower.id,
-          onClick: function onClick() {
-            return _this3.showFlower(flower);
+          onClick: function onClick(e) {
+            return _this3.showFlower(e, flower);
           }
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           href: "#"
