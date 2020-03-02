@@ -8,12 +8,19 @@ module.exports = {
   },
   mode: 'development',
   module: {
-    rules: [{
+    rules: [
+    {
       test: /\.jsx?$/,
       loader: 'babel-loader',
       exclude: /node_modules/
-    }]
+    },
+    {
+      test:/\.(s*)css$/,
+      use:['style-loader','css-loader', 'sass-loader'] 
+    }
+    ]
   },
+ 
   resolve: {
     extensions: ['.js', '.jsx']
   },

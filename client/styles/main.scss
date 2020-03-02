@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
+// VARIABLES
+$lightest: #f9faf8;
+$lighter:#8e8283;
+$primary: #dea3a1;
+$secondary: #a6746c;
+$dark: #787785;
+
+//  BASE
+html, * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 16px;
+  color: $dark;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  transition: all ease 0.5s;
+}
+
+
+// COMPONENTS
+.flower-list {
+  position: fixed;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flower-link {
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  color: $primary;
+
+  &:hover {
+    color: $dark;
+  }
+}
+
+.flower {
+  // position: relative;
+
+}
+
+.flower-desc {
+  padding: 2rem;
+}
