@@ -1,0 +1,19 @@
+//  BASE
+
+html, * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 16px;
+  color: $dark;
+}
+
+a {
+  transition: all ease 0.5s;
+}
+
+img {
+  max-width: 100%;
+}

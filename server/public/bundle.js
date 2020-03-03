@@ -239,11 +239,11 @@ __webpack_require__.r(__webpack_exports__);
 var Flower = function Flower(_ref) {
   var flower = _ref.flower;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "flower"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: flower.photo,
-    alt: "photo of a flower"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flower",
+    style: {
+      backgroundImage: "url(".concat(flower.photo, ")")
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flower-desc"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, flower.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, flower.desc)));
 };
@@ -492,7 +492,7 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Spartan&display=swap);"]);
 // Module
-exports.push([module.i, "html,*{box-sizing:border-box}body{font-family:'Spartan', sans-serif;font-size:16px;color:#787785;padding:0;margin:0}a{transition:all ease 0.5s}.flower-list{position:fixed;width:100%;list-style:none;display:flex;justify-content:flex-end}.flower-link{display:block;padding:.5rem 1rem;text-decoration:none;color:#dea3a1}.flower-link:hover{color:#787785}.flower-desc{padding:2rem}\n", ""]);
+exports.push([module.i, "/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type=\"button\"],[type=\"reset\"],[type=\"submit\"]{-webkit-appearance:button}button::-moz-focus-inner,[type=\"button\"]::-moz-focus-inner,[type=\"reset\"]::-moz-focus-inner,[type=\"submit\"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=\"button\"]:-moz-focusring,[type=\"reset\"]:-moz-focusring,[type=\"submit\"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=\"checkbox\"],[type=\"radio\"]{box-sizing:border-box;padding:0}[type=\"number\"]::-webkit-inner-spin-button,[type=\"number\"]::-webkit-outer-spin-button{height:auto}[type=\"search\"]{-webkit-appearance:textfield;outline-offset:-2px}[type=\"search\"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}html,*{box-sizing:border-box}body{font-family:'Spartan', sans-serif;font-size:16px;color:#787785}a{transition:all ease 0.5s}img{max-width:100%}.flower-list{position:fixed;width:100%;list-style:none;display:flex;justify-content:flex-end;padding:0;margin:0}.flower-link{display:block;padding:.5rem 1rem;text-decoration:none;color:#dea3a1}.flower-link:hover{color:#787785}.flower{background-size:cover;display:flex;padding:15rem 2rem 8rem;align-items:center}\n", ""]);
 // Exports
 module.exports = exports;
 
